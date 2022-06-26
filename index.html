@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Shopee</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,28 +11,241 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel = "icon" href="assets/img/icon.png" type = "image/x-icon">
     <link rel="stylesheet" href="assets/style/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
 </head>
-<body>
+<body style="background-color: #f5f5f5;">
     <header>
         <div class="container">
             <div class="row navbar">
-                <div class="col-md-6 haha">
-                    <p><a href="#">Kênh Người Bán</a> | <a href="#">Tải ứng dụng</a> | <a href="#">Kết nối</a></p>
+                <div class="col-md-6 link">
+                    <p><a href="#"> bán hàng</a> | <a href="#">Tải ứng dụng</a> | <a href="#">Kết nối</a></p>
                 </div>
                 <div class="col-md-6 fl">
                     <p>
                         <a href="#"><span class="notification">1</span>&nbsp;<i class="fa-solid fa-bell"></i> Thông báo</a> 
                         <a href="#">Hỗ trợ</a> 
-                        <a href="#"><img class="shopee-avatar__img" src="https://cf.shopee.vn/file/ae0c74d9b940f92239835ee53f5b0873_tn"> Hải Phùng</a>
+                        <a href="#"><img class="shop-avatar__img" src="https://cf.shopee.vn/file/ae0c74d9b940f92239835ee53f5b0873_tn"> Hải Phùng</a>
                     </p>
+                </div>
+            </div>
+            <div class="row header-with-search">
+                <div class="col-md-2">
+                    <img src="assets/img/logo.PNG" id="logo-shop" alt="logo shop">
+                </div>
+                <div class="col-md-9 search">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" name="" id="search" class="form-control" placeholder="Tìm kiếm sản phẩm" 
+                                aria-describedby="helpId">
+                            <button type="submit" class="btn btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-1">
+                    <a href="index.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             </div>
         </div>
     </header>
 
+    <section class="content">
+        <div class="container">
+            <div class="row banner">
+                <div class="col-md-12">
+                    <img src="https://cf.shopee.vn/file/94c3ac815f50dcd0e39645fe4a2d667c" alt="" width="100%" height="auto">
+                </div>
+            </div>
+            <div class="row category">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            Danh mục
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <a href="#" class="col-2 box">
+                                    <img src="https://cf.shopee.vn/file/ae0c74d9b940f92239835ee53f5b0873_tn" alt="" class="img">
+                                    <p>giày nam</p>
+                                </a>
+                                <a href="#" class="col-2 box">
+                                    <img src="https://cf.shopee.vn/file/ae0c74d9b940f92239835ee53f5b0873_tn" alt="" class="img">
+                                    <p>giày nam</p>
+                                </a>
+                                <a href="#" class="col-2 box">
+                                    <img src="https://cf.shopee.vn/file/ae0c74d9b940f92239835ee53f5b0873_tn" alt="" class="img">
+                                    <p>giày nam</p>
+                                </a>
+                                <a href="#" class="col-2 box">
+                                    <img src="https://cf.shopee.vn/file/ae0c74d9b940f92239835ee53f5b0873_tn" alt="" class="img">
+                                    <p>giày nam</p>
+                                </a>
+                                <a href="#" class="col-2 box">
+                                    <img src="https://cf.shopee.vn/file/ae0c74d9b940f92239835ee53f5b0873_tn" alt="" class="img">
+                                    <p>giày nam</p>
+                                </a>
+                                <a href="#" class="col-2 box box-last">
+                                    <img src="https://cf.shopee.vn/file/ae0c74d9b940f92239835ee53f5b0873_tn" alt="" class="img">
+                                    <p>giày nam</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-product">
+                <h1>Sản phẩm nổi bật</h1>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="home-product-item">
+                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/03bcde5a0269aa0b745e5b7497aec192);"></div>
+                            <h4 class="home-product-item__name">Quần short nữ cạp cao Quần short nữ cạp cao Quần short nữ cạp cao  nữ cạp cao nữ cạp cao</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">1.200.000đ</span>
+                                <span class="home-product-item__price-current">999.000đ</span>
+                            </div>
+                            <div class="home-product-item__action">
+                                <!-- <span class="home-product-item__like">
+                                    <i class="fas fa-heart"></i>    
+                                </span> -->
+                                <div class="home-product-item__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="home-product-item__sold">88 đã bán</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Who</span>
+                                <span class="home-product-item__origin-name">việt nam</span>
+                            </div>
+                            <div class="home-product-item__yeuthich">
+                                <i class="fas fa-check"></i>
+                                <span>yêu thích</span>
+                            </div> 
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">giảm</span>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="home-product-item">
+                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/03bcde5a0269aa0b745e5b7497aec192);"></div>
+                            <h4 class="home-product-item__name">Quần short nữ cạp cao Quần short nữ cạp cao Quần short nữ cạp cao  nữ cạp cao nữ cạp cao</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">1.200.000đ</span>
+                                <span class="home-product-item__price-current">999.000đ</span>
+                            </div>
+                            <div class="home-product-item__action">
+                                <!-- <span class="home-product-item__like">
+                                    <i class="fas fa-heart"></i>    
+                                </span> -->
+                                <div class="home-product-item__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="home-product-item__sold">88 đã bán</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Who</span>
+                                <span class="home-product-item__origin-name">việt nam</span>
+                            </div>
+                            <div class="home-product-item__yeuthich">
+                                <i class="fas fa-check"></i>
+                                <span>yêu thích</span>
+                            </div> 
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">giảm</span>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="home-product-item">
+                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/03bcde5a0269aa0b745e5b7497aec192);"></div>
+                            <h4 class="home-product-item__name">Quần short nữ cạp cao Quần short nữ cạp cao Quần short nữ cạp cao  nữ cạp cao nữ cạp cao</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">1.200.000đ</span>
+                                <span class="home-product-item__price-current">999.000đ</span>
+                            </div>
+                            <div class="home-product-item__action">
+                                <!-- <span class="home-product-item__like">
+                                    <i class="fas fa-heart"></i>    
+                                </span> -->
+                                <div class="home-product-item__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="home-product-item__sold">88 đã bán</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Who</span>
+                                <span class="home-product-item__origin-name">việt nam</span>
+                            </div>
+                            <div class="home-product-item__yeuthich">
+                                <i class="fas fa-check"></i>
+                                <span>yêu thích</span>
+                            </div> 
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">giảm</span>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="home-product-item">
+                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/03bcde5a0269aa0b745e5b7497aec192);"></div>
+                            <h4 class="home-product-item__name">Quần short nữ cạp cao Quần short nữ cạp cao Quần short nữ cạp cao  nữ cạp cao nữ cạp cao</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">1.200.000đ</span>
+                                <span class="home-product-item__price-current">999.000đ</span>
+                            </div>
+                            <div class="home-product-item__action">
+                                <!-- <span class="home-product-item__like">
+                                    <i class="fas fa-heart"></i>    
+                                </span> -->
+                                <div class="home-product-item__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="home-product-item__sold">88 đã bán</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Who</span>
+                                <span class="home-product-item__origin-name">việt nam</span>
+                            </div>
+                            <div class="home-product-item__yeuthich">
+                                <i class="fas fa-check"></i>
+                                <span>yêu thích</span>
+                            </div> 
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">giảm</span>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer style="width: 100%; height: 150px;">
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
